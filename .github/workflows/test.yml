@@ -12,11 +12,10 @@ jobs:
         ghidra: ["10.2"]
     steps:
       - uses: actions/checkout@v1
-      - uses: actions/setup-java@v1
+      - uses: actions/setup-java@v2
         with:
-          java-version: "17"
-          java-package: jdk
-          architecture: x64
+          distribution: 'coretto'
+          java-version: '17'
       - uses: er28-0652/setup-ghidra@master
         with:
           version: ${{ matrix.ghidra }}
