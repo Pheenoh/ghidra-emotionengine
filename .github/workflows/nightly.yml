@@ -2,7 +2,7 @@ name: Publish nightly build artifacts
 
 on:
   schedule:
-    - cron: '0 0 * * *'
+    - cron: '50 4 * * *'
 
 jobs:
   build_and_publish:
